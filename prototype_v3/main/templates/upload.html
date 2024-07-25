@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload new Video File</title>
+    <style>
+        /* Base styling */
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('templates/bg.jpg'); /* Reference to the uploaded image */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        /* Container styling */
+        .upload-container {
+            width: 550px;
+            height: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            border: 2px solid #2a3f54; /* Dark blue border */
+            border-radius: 10px;
+            box-sizing: border-box;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.8); /* Slight transparency to see the background */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        /* Heading styling */
+        h1 {
+            font-size: 24px;
+            font-weight: bold;
+            color: #2a3f54; /* Dark blue for headings */
+            margin: 0;
+            padding-top: 20px;
+            text-align: center;
+        }
+
+        /* File input and button styling */
+        input[type="file"] {
+            font-weight: bold;
+            padding: 10px 20px;
+            margin-top: 20px;
+            border-radius: 5px;
+            border: 1px solid #666;
+            cursor: pointer;
+            outline: none; /* Remove outline */
+        }
+
+        input[type="file"]::file-selector-button {
+            background-color: #f1f1f1;
+            color: #333;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+
+        input[type="submit"] {
+            font-weight: bold;
+            padding: 10px 20px;
+            margin-top: 20px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        /* Additional styling */
+        .hidden-message {
+            display: none; /* Keep the hidden message out of view */
+        }
+    </style>
+</head>
+<body background="your-image.jpg">
+    <h1>Synthesizing Entity Capsules from Video Bytes</h1>
+    <div class="upload-container">
+        <h1>Upload new Video File</h1>
+        <form method="post" enctype="multipart/form-data">
+            <input type="file" name="file">
+            <input type="submit" value="Upload">
+        </form>
+    </div>
+</body>
+</html>

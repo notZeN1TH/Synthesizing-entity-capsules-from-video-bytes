@@ -1,0 +1,83 @@
+<!--<!doctype html>
+<title>Upload new File</title>
+<h1>Upload new Video File</h1>
+<form method=post enctype=multipart/form-data>
+  <input type=file name=file>
+  <input type=submit value=Upload>
+</form> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload new File</title>
+    <style>
+        /* Container styling */
+        .upload-container {
+            width: 550px; /* Adjust the width of the container */
+            height: 400px;
+            float: left; /* Float the container to the right */
+            margin: 20px 20px 20px 50px; /* Add margins for spacing */
+            padding: 20px; /* Add padding inside the container */
+            border: 2px solid #ccc; /* Add border around the container */
+            border-radius: 10px; /* Add border radius for rounded corners */
+            box-sizing: border-box; /* Include border and padding in the width */
+            text-align: center; /* Center align the content inside the container */
+        }
+
+        .dashboard-container {
+            width: 550px; /* Adjust the width of the container */
+            height: 400px;
+            float: right; /* Float the container to the right */
+            margin: 20px 20px 20px 20px; /* Add margins for spacing */
+            padding: 20px; /* Add padding inside the container */
+            border: 2px solid #ccc; /* Add border around the container */
+            border-radius: 10px; /* Add border radius for rounded corners */
+            box-sizing: border-box; /* Include border and padding in the width */
+            text-align: center; /* Center align the content inside the container */
+        }
+
+        /* File input styling */
+        input[type="file"] {
+            margin-bottom: 20px; /* Add space below the file input */
+        }
+
+        /* Button styling */
+        #uploadButton {
+            display: block; /* Display the button as a block element */
+            margin-top: 440px; /* Add top margin to separate from the container */
+            margin-right: 50px; /* Add right margin for spacing */
+            margin-left: 50px;
+            float: left; /* Float the button to the right */
+            padding: 10px 20px; /* Add padding to the button */
+            font-size: 16px; /* Set font size */
+            cursor: pointer; /* Set cursor style to pointer */
+            background-color: #007bff; /* Set background color */
+            color: #fff; /* Set text color */
+            border: none; /* Remove border */
+            border-radius: 5px; /* Add border radius */
+        }
+    </style>
+</head>
+<body>
+    <!-- File upload container -->
+    <div class="upload-container">
+        <h1>Upload new Video File</h1>
+        <form method="post" enctype="multipart/form-data">
+            <input type="file" name="file">
+        </form>
+    </div>
+
+    <div class="dashboard-container">
+      <h1>DASHBOARD</h1>
+  </div>
+
+    <!-- Upload button outside the container -->
+    <button id="uploadButton">Process</button>
+</body>
+</html>
+
+
+
+
